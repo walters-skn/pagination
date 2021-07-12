@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Michaelet's Website On Covid</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+        <script defer src="js/script.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo-section">
+                <a href="index.html"><img src="images/red.jpeg"/></a>
+                <form>
+                    <input type="search" name="search" placeholder="Search"/>
+                    <input type="submit" value="search" class="material-icons"/>
+                    <div class="search-autocomplete display-none">
+                        <ul>
+                            <li>suggestion keyword</li>
+                        </ul>
+                    </div>
+                </form>
+                <p>
+                    <a href="mailto:mickywalters72@gmail.com">Contact Me<span class="material-icons">mail</span>
+                    </a>
+                </p>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li class="btn-main">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="btn-main" onmouseover="mouseover_on_nav_item(this)" onmouseout="mouseout_on_nav_item(this)">
+                    <a href="virus.html"> Virus</a>
+                    <div class="nav-submenu" onmouseover="mouseover_on_nav_item(this)">
+                        <ul>
+                            <li>
+                                <span class="material-icons-outlined">person</span>
+                                <a href="#">Country of Origin</a>
+                            </li>
+                            <li>
+                                <span class="material-icons-outlined">person</span>
+                                <a href="#">Symptoms</a>
+                            </li>
+                            <li>
+                                <span class="material-icons-outlined">person</span>
+                                <a href="#">Ways To Protect Yourself</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="btn-main" onmouseover="mouseover_on_nav_item(this)" onmouseout="mouseout_on_nav_item(this)">
+                    <a href="#">Vaccines</a>
+                    <div class="nav-submenu" onmouseover="mouseover_on_nav_item(this)">
+                        <ul>
+                            <li>
+                                <span class="material-icons-outlined">task</span>
+                                <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines.html/"> Types Of Vaccines</a>
+                            </li>
+                            <li>
+                                <span class="material-icons-outlined">task</span>
+                                <a href="https://www.healthline.com/health-news/vaccine-side-effects-vs-covid-19-damage-theres-no-comparison">Side Effects Of Vaccines</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="btn-main">
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div class="main-image slider">
+                <img src="https://www.nhpr.org/sites/nhpr/files/styles/medium/public/202105/CoronavirusBall_red_CDChighrez.png" class="slider-item"/>
+                <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/73C1/production/_112333692_coronavirus_key_symptoms_uk_v2_640-nc.png" class="slider-item"/>
+                <img src="https://www.businessinsider.in/photo/74417316/Coronavirus-Here-is-the-list-of-countries-affected-by-COVID-19.jpg?imgsize=484259" class="slider-item"/>
+                <img src="https://www.avert.org/sites/default/files/COVID-19%20Graphic%2002%20updated%20May%202021.png" class="slider-item"/>
+                <button class="slider-prev" onclick="prevImage()"><</button>
+                <button class="slider-next" onclick="nextImage()">></button>
+                <button class="slider-bingo spin" onclick="bingo()">SPIN</button>
+            </div>
+            <div class="main-content">
+                <section>
+                    <article>
+                        <h2>PURCHASE! PURCHASE! PURCHASE!</h2>
+                        <h3> <center>
+                            See items below:
+                        </center></h3>
+                        <div id="items-layout" class="items-layout"></div>
+                    </article>
+                    <article>
+                        <h2>What Is COVID-19</h2>
+                        <p> COVID-19 is a disease caused by a new strain of coronavirus. 'CO' stands for corona, 'VI' for virus, and 'D' for disease. Formerly, this disease was referred to as '2019 novel coronavirus' or '2019-nCoV.' </p>
+                    </article>
+                </section>
+                <aside>
+                    <h3>Today's TOP3 Teams</h3>
+                    <ul>
+                        <li>Stay home and seld-isloate even if you have minor symptoms such as cough, headache, mild fever, until you recover</li>
+                        <li>Ill your health care provider or hotline for advice</li>
+                        <li>If you need to leave your house or have someone near you, wear a medical mask to avoid infecting others</li>
+                    </ul>
+                </aside>
+            </div>
+        </main>
+        <footer>
+            <p>©Copyright 2021 by Michaelet Walters. All rights reversed.</p>
+        </footer>
+    </body>
+    <script>
+        const equipment = [
+            {
+                name: "Disposable mask - 50PCS",
+                color: "Blue",
+                description: "Durable",
+                price: "100",
+                image_link: "https://shikaboo.com/wp-content/uploads/2021/01/main_blue_new.jpg"
+            }, {
+                name: "Disposable mask - 50PCS",
+                color: "Black",
+                description: "Durable",
+                price: "150",
+                image_link: "https://images-na.ssl-images-amazon.com/images/I/71KyBdkKiIL._AC_SL1001_.jpg"
+            }, {
+                name: "Customize Your Own Face Mask",
+                color: "Choose Any",
+                description: "Durable",
+                price: "30",
+                image_link: "https://i2.wp.com/styleloft-boutique.com/wp-content/uploads/2020/05/download-12.png?fit=540%2C540&ssl=1"
+            }, {
+                name: "Automatic Sanitizer Dispenser",
+                color: "white",
+                description: "Comes With An Extra Bottle of Sanitizer",
+                price: "200",
+                image_link: "https://s.yimg.com/aah/yhst-98109100526289/touchless-automatic-hand-sanitizer-dispenser-with-stand-69.jpg"
+            }
+        ];
+
+        let currentPage = 1;
+        let totalPage = 0;
+        let totalItems = [];
+        const numbersOfPage = 9;
+        const items_layout = document.querySelector('#items-layout');
+
+        function renderItems(items) {
+            totalPage = Math.floor((items.length + 1) / 9) + 1;
+            renderPagination();
+            
+            const itemsOfPage = items.slice(numbersOfPage*(currentPage-1), (numbersOfPage*currentPage))
+            itemsOfPage.forEach(function (item) {
+                let item_html = "";
+                item_html += '<div class="item">';
+                item_html += '<div class="item-title">' + item.name + '</div>';
+                item_html += '<div class="item-body">';
+                item_html += '<div class="item-image"><img src="' + item.image_link + '"" /></div>';
+                item_html += '</div>';
+                item_html += '<div class="item-footer">'
+                item_html += '<div class="item-attribute"><span>' + item.color.toUpperCase() + '</span><span> ' + item.description.toUpperCase() + '</span></div>';
+                item_html += '<div>$' + item.price + '</div>';
+                item_html += '</div>';
+                item_html += '</div>';
+
+                items_layout.innerHTML += item_html;
+            })
+
+            renderPagination()
+
+            const elements = document.getElementsByClassName("item");
+            for (let index = 0; index < elements.length; index++) {
+                elements[index].onclick = function () {
+                    alert(this.querySelector('.item-title').innerText);
+                }
+            }
+        }
+
+        function rerenderItemsByPage(page){
+            currentPage = page;
+            items_layout.innerHTML = "";
+            renderItems(totalItems);
+        }
+
+        function renderPagination() {
+            let number_array = new Array(totalPage);
+            for (let index=0; index<number_array.length; index++) {
+                number_array[index] = index+1;
+            }
+            items_layout.innerHTML += 
+                        `<div class="pagination-division">
+                            <ul class="pagination-element">
+                                <li ${currentPage === 1 ? 'class="visible-hidden"': `onclick="rerenderItemsByPage(1)"`}><<</li>
+                                <li ${currentPage === 1 ? 'class="visible-hidden"': `onclick="rerenderItemsByPage(${currentPage-1})"`} ><</li>
+                                ${ number_array.reduce((accumulator, currentValue, currentIndex)=> {
+                                    return accumulator += `<li ${(currentPage === (currentIndex+1)) ? 'class="active"':  `onclick="rerenderItemsByPage(${currentIndex+1})"`} >${currentValue}</li>`
+                                }, "")}
+                                <li ${currentPage === totalPage ? 'class="visible-hidden"': `onclick="rerenderItemsByPage(${currentPage+1})"`} >></li>
+                                <li ${currentPage === totalPage ? 'class="visible-hidden"': `onclick="rerenderItemsByPage(${totalPage})"`} >>></li>
+                            </ul>
+                        </div>`
+        }
+
+        function readCSVFile(file) {
+            fetch(file).then(function (response) {
+                return response.text()
+            }).then(function (data) {
+                let items = []
+                const header_string = data.split(/\n/)[0];
+                const dataTable = data.split(/\n/).slice(1);
+                dataTable.forEach(function (row) {
+                    const headers = header_string.split(',');
+                    const columns = row.split(',');
+                    let item = {}
+                    columns.forEach((col, index) => {
+                        if (col) {
+                            const key = headers[index].replace(/(\r\n|\n|\r)/gm, "");
+                            item[key] = col.replace(/(\r\n|\n|\r)/gm, "");
+                        }
+                    })
+
+                    items.push(item);
+                })
+
+                renderItems(items);
+            })
+        }
+
+        function readJSONFile(file) {
+            fetch(file).then(response => {
+                return response.json();
+            }).then(data => {
+                totalItems = data.items;
+                renderItems(totalItems);
+            });
+        }
+
+        //renderItems(cars);
+        //readCSVFile("seeders/data.csv");
+        readJSONFile("seeders/data.json");
+    </script>
+</html>

@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "name": "Disposable mask - 50PCS",
+      "color": "Blue",
+      "description": "Durable",
+      "price": "100",
+      "image_link": "https://shikaboo.com/wp-content/uploads/2021/01/main_blue_new.jpg"
+  }, {
+    "name": "Disposable mask - 50PCS",
+    "color": "Black",
+    "description": "Durable",
+    "price":  "150",
+    "image_link":"https://images-na.ssl-images-amazon.com/images/I/71KyBdkKiIL._AC_SL1001_.jpg"
+  }, {
+    "name": "Customize Your Own Face Mask",
+    "color": "Choose Any",
+    "description": "Durable",
+    "price":  "30",
+    "image_link": "https://i2.wp.com/styleloft-boutique.com/wp-content/uploads/2020/05/download-12.png?fit=540%2C540&ssl=1"
+  }, {
+    "name": "Automatic Sanitizer Dispenser",
+    "color": "white",
+    "description": "Comes With An Extra Bottle of Sanitizer",
+    "price":  "200",
+    "image_link": "https://s.yimg.com/aah/yhst-98109100526289/touchless-automatic-hand-sanitizer-dispenser-with-stand-69.jpg"
+  }
+]
+}
